@@ -1,0 +1,72 @@
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 190px; /* Changed from 500px to auto */
+  text-decoration: none;
+  background-color: #907667; /* Button color */
+  color: #534b4f; /* Text color */
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center the text inside the button */
+}
+
+.btn-primary:hover {
+  background-color: #b65b2e; /* Hover color */
+}
+
+.card {
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #9E7A5A; /* Clair Brown Border */
+}
+
+.card-header {
+  background-color: #A0522D; /* Dark Brown */
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  color: #8B4513; /* Dark Orange */
+}
+
+.form-control {
+  display: block;
+  width: 95%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #9E7A5A; /* Clair Brown */
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #87CEEB; /* Sky Blue */
+  box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, .25); /* Sky Blue with Opacity */
+}
+
+.form-control:hover {
+  border-color: #A0522D; /* Dark Brown */
+}
+
