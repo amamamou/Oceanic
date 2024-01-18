@@ -1,0 +1,66 @@
+<section id="home" class="parallax-section home-section">
+  <div class="background-image"></div>
+  <div class="background-video">
+      <video autoplay muted loop>
+        <source src="assets/videos/13.mp4" type="video/mp4">
+      </video>
+  </div>
+</section>
+<section id="welcome-section">
+  <div class="bgv2">
+    <h1>Welcome to &nbsp; <span class="oceanic-text">  Oceanic</span></h1>
+
+      <p>Ever dreamt of owning a luxurious boat or a majestic yacht?<br><br> At Oceanic, dreams meet reality. Our curated collection defies the ordinary, offering vessels that embody elegance, comfort, and sheer sophistication.<br> Immerse yourself in a sea of possibilities and discover the extraordinary. From sleek designs to unparalleled craftsmanship, each offering reflects our commitment to luxury.<br> Explore our range and experience the exceptional at prices that redefine value.</p>
+      <br><br><button routerLink="/pages/produits" class="explore-button">Explore Now</button>
+  </div>
+  <div class="bg2">
+  </div>
+</section>
+<!--
+<section id="latest-section">
+  <div class="container">
+    <div class="boat-container">
+      <img src="../../assets/images/35.jpg" alt="Boat 1">
+      <p>Sea Voyager</p>
+    </div>
+    <div class="boat-container">
+      <img src="../../assets/images/10.jpg" alt="Boat 2">
+      <p>Ocean Serenity</p>
+    </div>
+    <div class="boat-container">
+      <img src="../../assets/images/36.jpg" alt="Boat 3">
+      <p>Wave Rider</p>
+    </div>
+    <div class="boat-container">
+      <img src="../../assets/images/12.jpg" alt="Boat 4">
+      <p>Blue Horizon</p>
+    </div>
+    <div class="boat-container">
+      <img src="../../assets/images/39.jpg" alt="Boat 5">
+      <p>Sailor's Dream</p>
+    </div>
+    <div class="boat-container">
+      <img src="../../assets/images/37.jpg" alt="Boat 6">
+      <p>Starship Explorer</p>
+    </div>
+  </div>
+</section>
+-->
+<br>
+<section>
+  <div class="container" routerLink="/pages/produits" >
+    <h2>Meet our latest</h2>
+    <div class="grid-container">
+      <div class="grid-item" *ngFor="let product of lastSixProducts">
+       <div class="card">
+          <img class="card-img-top" [src]="imageMapping[product.idProduit]" alt="{{ product.nomProduit }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.nomProduit }}</h5>
+            <p class="card-text">Price: ${{ product.prixProduit }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<br>

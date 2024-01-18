@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', serif; /* Times New Roman font */
+
+}
+
+/* Parallax Sections */
+.parallax-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #534b4f; /* Navy color */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Home Section Styling
+.home-section {
+
+  background-image: url('p3.jpg');
+  /* Add more styles as needed
+}
+
+.home-section .content {
+  text-align: center;
+}
+*/
+
+
+
+
+
+.home-section .content {
+  text-align: center;
+}
+.oceanic-text {
+  font-style: italic;
+  font-size: 2em; /* Adjust the size as needed */
+  font-weight: normal;
+  /* Add more styles for Oceanic */
+}
+
+
+
+
+/* Calm Background Animation for Shop Section */
+.calm-background {
+  background: linear-gradient(135deg, #f7f0e8, #a7642c, #f7f0e8); /* Calm gradient */
+  background-size: 600% 600%;
+  overflow: hidden;
+  animation: calmAnimation 5s ease infinite;
+}
+
+@keyframes calmAnimation {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+/* Parallax Sections */
+/* Add your general styles and navbar styles here */
+
+.parallax-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Set the height */
+}
+
+.background-video {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /* Video takes left half */
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-image {
+  position: absolute;
+  background-attachment: fixed;
+  top: 0;
+  right: 0;
+  width:50%; /* Image takes right half */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/19.jpg');
+  background-size: auto 100%;
+
+  background-position: right;
+  z-index: -1;
+}
+.loul video {
+  max-width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+/* heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
+.bg2 {
+
+  background-attachment: fixed;
+  padding: 300px; /* Adjust padding as needed */
+  left: 0;
+  width: 100%; /* Adjust the width of the image */
+  height: 100%;
+  max-width: 800px; /* Adjust the maximum width of the image */
+  background-image: url('../../assets/images/32.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;  /* Ensure full coverage */
+  z-index: -1;
+}
+
+.bgv2 {
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  right: 9px;
+  padding: 20px; /* Add padding as needed */
+  line-height: 1.6; /* Adjust line height */
+  height: calc(100vh - 200px); /* Adjust the height based on the photo's padding and margins */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+
+
+
+#welcome-section p {
+  font-size: 1.2em;
+  /* Other styles for the paragraph */
+}
+
+.explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #907667; /* Button color */
+  color: #534b4f; /* Text color */
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #b65b2e; /* Hover color */
+}
+.bg3 {
+  position: absolute;
+  background-attachment: fixed;
+  padding: 250px; /* Adjust padding as needed */
+  margin-left: 8px; /* Adjust margin as needed */
+  left: 0;
+  width: 100%; /* Adjust the width of the image */
+  height: 100%;
+  max-width: 300px; /* Adjust the maximum width of the image */
+  background-image: url('../../assets/images/8.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;  /* Ensure full coverage */
+  z-index: -1;
+}
+#latest-section {
+  text-align: center;
+  /* Add more styles for the section if needed */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #ccc; /* Border styling */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.boat-container {
+  width: 30%; /* Adjust width as needed */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd; /* Border for each boat */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Background color */
+}
+
+.boat-container img {
+  width: 100%; /* Ensure all images have the same width */
+  height: auto;
+  border-radius: 8px; /* Rounded image corners */
+}
+
+.boat-container p {
+  margin-top: 10px;
+  font-weight: bold;
+  /* Add more styles for the boat name */
+}
+/************************/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid-item {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+.card {
+  border: 1px solid #ddd; /* subtle border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* smooth transitions */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* larger shadow on hover */
+  transform: translateY(-5px); /* subtle lift effect */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px; /* card inner spacing */
+}
+
+.btn-primary {
+  margin: 0 auto;
+
+  display: block;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #c99c82;
+  color: #534b4f;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  border: none; /* Remove default border */
+  margin-top: 10px;
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+.btn-primary:hover {
+  background-color: #b65b2e;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}

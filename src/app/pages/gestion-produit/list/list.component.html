@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="category-container">
+    <!-- Category 1 -->
+    <div class="category" (click)="fetchProductsByCategory('affordable')">
+      <img src="../../assets/images/58.jpg" alt="Category 1">
+      <h3>Category 1: <i class="non-bold">Affordable</i> </h3>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="category" (click)="fetchProductsByCategory('expensive')">
+      <img src="../../assets/images/57.jpg" alt="Category 2">
+      <h3>Category 2: <i class="non-bold">Expensive</i>  </h3>
+    </div>
+  </div>
+<br>
+  <h2></h2>
+  <div class="grid-container">
+    <div class="grid-item" *ngFor="let product of products">
+      <div class="card">
+        <img class="card-img-top" [src]="imageMapping[product.idProduit]" alt="{{ product.nomProduit }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.nomProduit }}</h5>
+          <p class="card-text">Price: ${{ product.prixProduit }}</p>
+
+          <button class="edit" (click)="openEditForm(product)" type="button">Edit</button>
+          <button class="delete" (click)="deleteProduct(product.idProduit)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display': displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div *ngIf="selectedProduit" class="card">
+          <h2 class="card-header">Edit Product</h2>
+          <div class="card-body">
+            <form (ngSubmit)="update(selectedProduit)">
+              <div class="form-group">
+                <label for="nomProduit">Product Name:   &nbsp;</label>
+                <input type="text" id="nomProduit" [(ngModel)]="selectedProduit.nomProduit" name="nomProduit" required class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="prixProduit">Product Price: &nbsp; &nbsp;</label>
+                <input type="number" id="prixProduit" [(ngModel)]="selectedProduit.prixProduit" name="prixProduit" required class="form-control">
+              </div>
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+              <button type="button" (click)="closeEditForm()" class="btn btn-primary">Cancel</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

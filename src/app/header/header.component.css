@@ -1,0 +1,40 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  top: -20px;
+
+}
+.essai p{
+  margin-bottom:-5px;
+  margin-right: 750px;
+  font-family: 'Times New Roman', serif;
+}
+
+.navbar .logo img {
+  margin-top: 15px;
+  height: 70px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #534b4f;
+  text-decoration: none;
+}

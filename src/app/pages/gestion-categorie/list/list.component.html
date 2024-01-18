@@ -1,0 +1,28 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<table class="table">
+  <thead>
+  <tr>
+  <th>ID</th>
+  <th>Category Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let categorie of categories">
+  <td>{{ categorie.id_cat }}</td>
+  <td>{{ categorie.nom_cat }}</td>
+  </tr>
+  </tbody>
+  </table>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label for="nom_cat">Category Name:</label>
+    <input type="text" class="form-control" formControlName="nom_cat">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Category</button>
+    </form>

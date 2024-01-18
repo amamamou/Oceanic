@@ -1,0 +1,51 @@
+/* Contact Section Styling */
+.contact-section {
+  background-image: url('../../assets/images/19.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding:200px; /* Adjust padding as needed */
+  max-height: 40px;
+}
+
+.contact-section .content {
+  margin-top: -150px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px; /* Adjust as needed */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  /* Add more styles as needed */
+}
+
+.contact-section button{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #907667; /* Button color */
+  color: #534b4f; /* Text color */
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #b65b2e; /* Hover color */
+}

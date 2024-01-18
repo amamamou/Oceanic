@@ -1,0 +1,163 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid-item {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+.card {
+  border: 1px solid #ddd; /* subtle border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* smooth transitions */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* larger shadow on hover */
+  transform: translateY(-5px); /* subtle lift effect */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px; /* card inner spacing */
+}
+
+.btn-primary {
+  margin: 0 auto;
+
+  display: block;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #c99c82;
+  color: #534b4f;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  border: none; /* Remove default border */
+  margin-top: 10px;
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+.btn-primary:hover {
+  background-color: #b65b2e;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  display: flex; /* Changed to flex for centering */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1051;
+}
+.edit, .delete {
+  display: inline-block; /* Place buttons next to each other */
+  margin-right: 10px;    /* Optional: Add some space between the buttons */
+}
+
+.edit {
+  background-color: 907667;
+  color: white; /* For better readability */
+  border: none; /* Optional: Style as per your preference */
+  padding: 5px 10px; /* Optional: Adjust padding as needed */
+  cursor: pointer; /* Changes cursor to indicate button */
+}
+.edit, .delete:hover {
+  background-color: #b65b2e;
+}
+.delete {
+  background-color: rgb(129, 38, 38);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.category-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.category {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category img {
+  max-width: 100%;
+  height: auto;
+}
+
+.category h3 {
+  margin-top: 10px;
+}
+.non-bold {
+  font-style: italic;
+  font-weight: normal;
+}
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* White background */
+}
+
+.modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust as per requirement */
+  max-width: 800px; /* Adjust as per requirement */
+}
+
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: white; /* White background for the content */
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* Rest of your styles for .modal-body and other elements */
